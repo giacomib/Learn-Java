@@ -3,10 +3,8 @@ import Chapter7.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-
-        //testing fibonacci
-        Fibonacci myFibonacci = new Fibonacci();
-        System.out.println("res: " + myFibonacci.fibonacci(8));
+        
+        // testing chapter 6 classes
 
         //testing of OrdinaArray class
         int[] valori1 = new int[]{10, 15, 32, 2, 4, 23, 21, 10, 15, 32, 2, 4, 23, -21};
@@ -224,5 +222,12 @@ public class Main {
         }
         System.out.println();
         System.out.println();
+
+        // testing chapter 7 classes
+        
+        // testing fibonacci
+        Fibonacci myFibonacci = new Fibonacci();
+        System.out.println("res: " + myFibonacci.fibonacci(8));
     }
+    
 }
