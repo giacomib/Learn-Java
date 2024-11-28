@@ -1,3 +1,4 @@
+package Chapter7;
 public class Fibonacci {
     
     public int fibonacci(int n) {
@@ -7,5 +8,4 @@ public class Fibonacci {
             return n;
         return fibonacci(n-1) + fibonacci(n-2);
     }
-    
 }
