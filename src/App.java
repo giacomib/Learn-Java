@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Fibonacci myFibonacci = new Fibonacci();
+        System.out.println("res: " + myFibonacci.fibonacci(8));       
     }
 }
