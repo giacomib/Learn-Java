@@ -8,4 +8,4 @@ You might get the following error while trying to run the project in VS code:\
 `Error: Could not find or load main class Main Caused by: java.lang.ClassNotFoundException: Main`\
 this error is apparently not related to the project itself but instead to VS code environment, the way i use to fix the problem is the following:\
 `F1 ->Clean the java language server workspace`\
-solution sudgested from this [link] (https://stackoverflow.com/questions/57857855/could-not-find-or-load-main-class-vs-code)
+solution suggested by : https://stackoverflow.com/questions/57857855/could-not-find-or-load-main-class-vs-code
