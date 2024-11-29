@@ -225,12 +225,36 @@ public class Main {
 
         // testing chapter 7 classes
         
-        // testing fibonacci
+        System.out.println("testing fibonacci");
         Fibonacci myFibonacci = new Fibonacci();
-        System.out.println("res: " + myFibonacci.fibonacci(8));
+        long start = System.currentTimeMillis();
+        System.out.println("res: " + myFibonacci.fibonacci(20));
+        long finish = System.currentTimeMillis();
+        long timeElapsed = finish - start;
+        System.out.println("Time elapsed: " + timeElapsed);
 
+        System.out.println("testing chapter 7 exercises - method 1");
         System.out.println("il risultato e':");
         Chapter7.Exercises.metodo1(23);
+        System.out.println();
+
+        System.out.println("testing chapter 7 potenza");
+        System.out.println("il risultato di potenza(2, 4) e': " + Chapter7.Exercises.potenza(2, 4) );
+        System.out.println("il risultato di potenza(2, 0) e': " + Chapter7.Exercises.potenza(2, 0) );
+        System.out.println();
+
+        System.out.println("testing chapter 7 metodo2");
+        System.out.println("il risultato e':");
+        Chapter7.Exercises.metodo2(11156);
+        System.out.println();
+
+        System.out.println("testing chapter 7 nCifreDispRic");
+        System.out.println("il risultato di nCifreDispRic(65000) e': " + Chapter7.Exercises.nCifreDispRic(6500011) );
+        System.out.println();
+
+        System.out.println("testing chapter 7 cifSumPosRic");
+        System.out.println("il risultato di cifSumPosRic(65000) e': " + Chapter7.Exercises.cifSumPosRic(6500011) );
+        System.out.println();
     }
     
 }
