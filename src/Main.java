@@ -228,6 +228,9 @@ public class Main {
         // testing fibonacci
         Fibonacci myFibonacci = new Fibonacci();
         System.out.println("res: " + myFibonacci.fibonacci(8));
+
+        System.out.println("il risultato e':");
+        Chapter7.Exercises.metodo1(23);
     }
     
 }
