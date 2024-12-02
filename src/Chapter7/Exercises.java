@@ -40,9 +40,33 @@ public class Exercises {
         return nCifreDispRic(n / 10);
     }
 
+    // exercise 4
     public static int cifSumPosRic(int n) {
         if(n < 10)
             return n;
         return (n % 10) + cifSumPosRic(n / 10);
+    }
+
+    // exercise 5
+    public static int calcolaDieciAlla(int n) {
+        if (n == 0)
+            return 1;
+        if (n == 1)
+            return 10;
+        return 10 * calcolaDieciAlla(n-1);
+    }
+
+    //sum of the numbers in the input array
+    public static int sumOfArray(int[] array, int left, int right) {
+        
+        int middle = (left + right) / 2;
+
+        if(left > right)
+            return 0;
+        
+        if(left == right)
+            return array[left];
+        
+        return sumOfArray(array, left, middle) + sumOfArray(array, middle + 1, right);
     }
 }

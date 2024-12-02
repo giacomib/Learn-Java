@@ -255,6 +255,30 @@ public class Main {
         System.out.println("testing chapter 7 cifSumPosRic");
         System.out.println("il risultato di cifSumPosRic(65000) e': " + Chapter7.Exercises.cifSumPosRic(6500011) );
         System.out.println();
+
+        System.out.println("testing chapter 7 calcolaDieciAlla");
+        System.out.println("il risultato di calcolaDieciAlla(5) e': " + Chapter7.Exercises.calcolaDieciAlla(5) );
+        System.out.println();
+
+        int[] empty = new int[] {};
+        System.out.println("test 1 chapter 7 sumOfArray");
+        System.out.println("il risultato di sumOfArray(empty) e': " + Chapter7.Exercises.sumOfArray(empty, 0, empty.length - 1) );
+        System.out.println();
+
+        int[] array10 = new int[] {10};
+        System.out.println("test 2 chapter 7 sumOfArray");
+        System.out.println("il risultato di sumOfArray(array10) e': " + Chapter7.Exercises.sumOfArray(array10, 0, array10.length - 1) );
+        System.out.println();
+
+        int[] array11 = new int[] {10, 20};
+        System.out.println("test 3 chapter 7 sumOfArray");
+        System.out.println("il risultato di sumOfArray(array11) e': " + Chapter7.Exercises.sumOfArray(array11, 0, array11.length - 1) );
+        System.out.println();
+
+        int[] array12 = new int[] {10, 20, 30};
+        System.out.println("test 4 chapter 7 sumOfArray");
+        System.out.println("il risultato di sumOfArray(array12) e': " + Chapter7.Exercises.sumOfArray(array12, 0, array12.length - 1) );
+        System.out.println();
     }
     
 }
