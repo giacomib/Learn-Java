@@ -56,7 +56,7 @@ public class Exercises {
         return 10 * calcolaDieciAlla(n-1);
     }
 
-    //sum of the numbers in the input array
+    //ex6 sum of the numbers in the input array
     public static int sumOfArray(int[] array, int left, int right) {
         
         int middle = (left + right) / 2;
