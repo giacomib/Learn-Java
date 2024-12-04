@@ -279,6 +279,40 @@ public class Main {
         System.out.println("test 4 chapter 7 sumOfArray");
         System.out.println("il risultato di sumOfArray(array12) e': " + Chapter7.Exercises.sumOfArray(array12, 0, array12.length - 1) );
         System.out.println();
+
+        System.out.println("test 1 chapter 7 max value of an array");
+        System.out.println("il risultato di maxValue(empty) e': " + Chapter7.Exercises.maxValue(empty, 0, empty.length - 1) );
+        System.out.println();
+
+        System.out.println("test 2 chapter 7 max value of an array");
+        System.out.println("il risultato di maxValue(array10) e': " + Chapter7.Exercises.maxValue(array10, 0, array10.length - 1) );
+        System.out.println();
+
+        System.out.println("test 3 chapter 7 max value of an array");
+        System.out.println("il risultato di maxValue(array11) e': " + Chapter7.Exercises.maxValue(array11, 0, array11.length - 1) );
+        System.out.println();
+
+        System.out.println("test 4 chapter 7 max value of an array");
+        System.out.println("il risultato di maxValue(array12) e': " + Chapter7.Exercises.maxValue(array12, 0, array12.length - 1) );
+        System.out.println();
+
+        System.out.println("test 1 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(empty, 10) e': " + Chapter7.Exercises.ternarySearch(empty, 10, 0, empty.length - 1) );
+        System.out.println();
+
+        System.out.println("test 2 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(array10, 10) e': " + Chapter7.Exercises.ternarySearch(array10, 10, 0, array10.length - 1) );
+        System.out.println();
+
+        int[] array13 = new int[] {1, 5, 7, 8, 10, 50, 200, 201};
+        System.out.println("test 2 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(array13, 10) e': " + Chapter7.Exercises.ternarySearch(array13, 10, 0, array13.length - 1) );
+        System.out.println();
+
+/*         int[] array14 = new int[] {1, 5, 7, 8, 50, 200, 201, 10};
+        System.out.println("test 3 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(array14, 10) e': " + Chapter7.Exercises.ternarySearch(array14, 10, 0, array14.length - 1) );
+        System.out.println(); */
     }
     
 }
