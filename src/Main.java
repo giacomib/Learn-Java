@@ -330,6 +330,22 @@ public class Main {
         for (int element : res16)
             System.out.println(element);
         System.out.println();
+
+        int[] array17 = new int[] {0};
+        System.out.println("test 2 chapter 7 cumulative sum of array elements");
+        int[] res17 = Chapter7.Exercises.cumulativeSums(array17, array17.length - 1);
+        System.out.println("il risultato di cumulativeSums(array17) e': ");
+        for (int element : res17)
+            System.out.println(element);
+        System.out.println();
+
+        int[] array18 = new int[] {0, 0, 0, 10, 0, 0, -5, 0, 0, -5, 0};
+        System.out.println("test 3 chapter 7 cumulative sum of array elements");
+        int[] res18 = Chapter7.Exercises.cumulativeSums(array18, array18.length - 1);
+        System.out.println("il risultato di cumulativeSums(array18) e': ");
+        for (int element : res18)
+            System.out.println(element);
+        System.out.println();
     }
     
 }

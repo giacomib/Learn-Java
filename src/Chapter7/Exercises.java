@@ -118,20 +118,19 @@ public class Exercises {
     }
 
     // ex9 cumulative sums calculator
-    public static int[] cumulativeSums(int[] inputArray, int actualPos) {
+    public static int[] cumulativeSums(int[] inputArray, int pos) {
         int[] result;
-
-        if(inputArray.length == 0)
-            return new int[] {-1};
         
         result = new int[inputArray.length];
 
-        if(actualPos == 0) {
-            result[0] = inputArray[actualPos];
+        if(pos == 0) {
+            result[0] = inputArray[0];
             return result;
         }
-        result[actualPos] = inputArray[actualPos] + cumulativeSums(inputArray, actualPos - 1)[actualPos - 1];
-        return result;
         
+        result = cumulativeSums(inputArray, pos - 1);
+        result[pos] = inputArray[pos] + result[pos - 1];
+        
+        return result;
     }
 }
