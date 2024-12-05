@@ -309,10 +309,23 @@ public class Main {
         System.out.println("il risultato di ternarySearch(array13, 10) e': " + Chapter7.Exercises.ternarySearch(array13, 10, 0, array13.length - 1) );
         System.out.println();
 
-/*         int[] array14 = new int[] {1, 5, 7, 8, 50, 200, 201, 10};
+        int[] array14 = new int[] {0, 1, 2};
+        System.out.println(array14.length);
         System.out.println("test 3 chapter 7 ternary search");
-        System.out.println("il risultato di ternarySearch(array14, 10) e': " + Chapter7.Exercises.ternarySearch(array14, 10, 0, array14.length - 1) );
-        System.out.println(); */
+        System.out.println("il risultato di ternarySearch(array14, 1) e': " + Chapter7.Exercises.ternarySearch(array14, 1, 0, array14.length - 1) );
+        System.out.println();
+
+        int[] array15 = new int[] {0, 1, 2, 3, 5, 7};
+        System.out.println(array14.length);
+        System.out.println("test 3 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(array15, 0) e': " + Chapter7.Exercises.ternarySearch(array15, 0, 0, array15.length - 1) );
+        System.out.println();
+
+        int[] array16 = new int[] {0, 1, 2, 3, 5, 7};
+        System.out.println(array14.length);
+        System.out.println("test 3 chapter 7 ternary search");
+        System.out.println("il risultato di ternarySearch(array16, 7) e': " + Chapter7.Exercises.ternarySearch(array16, 7, 0, array16.length - 1) );
+        System.out.println();
     }
     
 }

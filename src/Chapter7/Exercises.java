@@ -91,8 +91,6 @@ public class Exercises {
 
     // ex8 ricerca ternaria
     public static int ternarySearch(int[] inputArray, int value, int l, int r) {
-        System.err.println("l: " + l);
-        System.err.println("r: " + r);
         if(l > r)
             return -1;
         
