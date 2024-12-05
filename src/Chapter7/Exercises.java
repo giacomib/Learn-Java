@@ -116,4 +116,22 @@ public class Exercises {
         return ternarySearch(inputArray, value, m1+1, m2-1);
         
     }
+
+    // ex9 cumulative sums calculator
+    public static int[] cumulativeSums(int[] inputArray, int actualPos) {
+        int[] result;
+
+        if(inputArray.length == 0)
+            return new int[] {-1};
+        
+        result = new int[inputArray.length];
+
+        if(actualPos == 0) {
+            result[0] = inputArray[actualPos];
+            return result;
+        }
+        result[actualPos] = inputArray[actualPos] + cumulativeSums(inputArray, actualPos - 1)[actualPos - 1];
+        return result;
+        
+    }
 }

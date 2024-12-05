@@ -305,26 +305,30 @@ public class Main {
         System.out.println();
 
         int[] array13 = new int[] {1, 5, 7, 8, 10, 50, 200, 201};
-        System.out.println("test 2 chapter 7 ternary search");
+        System.out.println("test 3 chapter 7 ternary search");
         System.out.println("il risultato di ternarySearch(array13, 10) e': " + Chapter7.Exercises.ternarySearch(array13, 10, 0, array13.length - 1) );
         System.out.println();
 
         int[] array14 = new int[] {0, 1, 2};
-        System.out.println(array14.length);
-        System.out.println("test 3 chapter 7 ternary search");
+        System.out.println("test 4 chapter 7 ternary search");
         System.out.println("il risultato di ternarySearch(array14, 1) e': " + Chapter7.Exercises.ternarySearch(array14, 1, 0, array14.length - 1) );
         System.out.println();
 
         int[] array15 = new int[] {0, 1, 2, 3, 5, 7};
-        System.out.println(array14.length);
-        System.out.println("test 3 chapter 7 ternary search");
+        System.out.println("test 5 chapter 7 ternary search");
         System.out.println("il risultato di ternarySearch(array15, 0) e': " + Chapter7.Exercises.ternarySearch(array15, 0, 0, array15.length - 1) );
         System.out.println();
 
-        int[] array16 = new int[] {0, 1, 2, 3, 5, 7};
-        System.out.println(array14.length);
-        System.out.println("test 3 chapter 7 ternary search");
+        int[] array16 = new int[] {-1, 0, 1, 2, 3, 5, 7};
+        System.out.println("test 6 chapter 7 ternary search");
         System.out.println("il risultato di ternarySearch(array16, 7) e': " + Chapter7.Exercises.ternarySearch(array16, 7, 0, array16.length - 1) );
+        System.out.println();
+
+        System.out.println("test 1 chapter 7 cumulative sum of array elements");
+        int[] res16 = Chapter7.Exercises.cumulativeSums(array16, array16.length - 1);
+        System.out.println("il risultato di cumulativeSums(array16) e': ");
+        for (int element : res16)
+            System.out.println(element);
         System.out.println();
     }
     
