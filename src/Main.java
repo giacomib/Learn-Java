@@ -355,6 +355,29 @@ public class Main {
 
         System.out.println("test 2 chapter 7 compound interest recursive");
         System.out.println("res: " + Chapter7.Exercises.compoundInterest(5, 3));
+
+        System.out.println();
+
+        System.out.println("test 1 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(0));
+
+        System.out.println("test 2 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(1));
+
+        System.out.println("test 3 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(2));
+
+        System.out.println("test 4 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(3));
+
+        System.out.println("test 5 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(4));
+
+        System.out.println("test 6 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(5));
+
+        System.out.println("test 7 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
+        System.out.println("res: " + Chapter7.Exercises.M(7));
     }
     
 }

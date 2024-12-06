@@ -143,4 +143,14 @@ public class Exercises {
         
         return compoundInterest(startingValue, months-1) * 1.005;
     }
+
+    // ex11 numberof distinct messages that can be sent in k milliseconds
+    public static int M(int k) {
+        if(k == 0 || k == 1)
+            return 0;
+        if(k == 2 || k == 3)
+            return 1;
+        // k > 3
+        return M(k - 2) + M(k - 3);
+    }
 }
