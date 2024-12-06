@@ -346,6 +346,15 @@ public class Main {
         for (int element : res18)
             System.out.println(element);
         System.out.println();
+
+        System.out.println("test 0 chapter 7 compound interest recursive");
+        System.out.println("res: " + Chapter7.Exercises.compoundInterest(5, 0));
+
+        System.out.println("test 1 chapter 7 compound interest recursive");
+        System.out.println("res: " + Chapter7.Exercises.compoundInterest(5, 2));
+
+        System.out.println("test 2 chapter 7 compound interest recursive");
+        System.out.println("res: " + Chapter7.Exercises.compoundInterest(5, 3));
     }
     
 }

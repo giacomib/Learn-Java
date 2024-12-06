@@ -133,4 +133,14 @@ public class Exercises {
         
         return result;
     }
+
+    // ex10 compound interest
+    public static double compoundInterest(double startingValue, int months) {
+        if(months <= 0)
+            return -1;
+        if(months == 1)
+            return startingValue * 1.005;
+        
+        return compoundInterest(startingValue, months-1) * 1.005;
+    }
 }
