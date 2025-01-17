@@ -378,6 +378,70 @@ public class Main {
 
         System.out.println("test 7 chapter 7 number of distinct messages that can be sent in a time of k milliseconds");
         System.out.println("res: " + Chapter7.Exercises.M(7));
+
+        System.out.println();
+
+        String strVowels1 = "";
+        int resVowels1 = Chapter7.Exercises.nVowels(strVowels1);
+        System.out.println("String " + strVowels1 + " has " + resVowels1 + " vowels in it");
+
+        String strVowels2 = "lkfgjnklkgf";
+        int resVowels2 = Chapter7.Exercises.nVowels(strVowels2);
+        System.out.println("String " + strVowels2 + " has " + resVowels2 + " vowels in it");
+
+        String strVowels3 = "abcdefghilm";
+        int resVowels3 = Chapter7.Exercises.nVowels(strVowels3);
+        System.out.println("String " + strVowels3 + " has " + resVowels3 + " vowels in it");
+
+        System.out.println();
+
+        String strRemVowels1 = "";
+        String resRemVowels1 = Chapter7.Exercises.remVowels(strRemVowels1);
+        System.out.println("Before " + strRemVowels1 + " after removing vowels " + resRemVowels1);
+
+        String strRemVowels2 = "lkfgjnklkgf";
+        String resRemVowels2 = Chapter7.Exercises.remVowels(strRemVowels2);
+        System.out.println("Before " + strRemVowels2 + " after removing vowels " + resRemVowels2);
+
+        String strRemVowels3 = "abcdefghilm";
+        String resRemVowels3 = Chapter7.Exercises.remVowels(strRemVowels3);
+        System.out.println("Before " + strRemVowels3 + " after removing vowels " + resRemVowels3);
+
+        System.out.println();
+
+        String strDupChar1 = "";
+        String resStrDupChar1 = Chapter7.Exercises.DuplicateCharacters(strDupChar1);
+        System.out.println("Before " + strDupChar1 + " after duplicating characters " + resStrDupChar1);
+
+        String strDupChar2 = "i";
+        String resStrDupChar2 = Chapter7.Exercises.DuplicateCharacters(strDupChar2);
+        System.out.println("Before " + strDupChar2 + " after duplicating characters " + resStrDupChar2);
+
+        String strDupChar3 = "isadgijafs";
+        String resStrDupChar3 = Chapter7.Exercises.DuplicateCharacters(strDupChar3);
+        System.out.println("Before " + strDupChar3 + " after duplicating characters " + resStrDupChar3);
+
+        System.out.println();
+
+        String strInvString1 = "";
+        String resStrInvString1 = Chapter7.Exercises.invertString(strInvString1);
+        System.out.println("Before " + strInvString1 + " after inverting characters " + resStrInvString1);
+
+        String strInvString2 = "abcd";
+        String resStrInvString2 = Chapter7.Exercises.invertString(strInvString2);
+        System.out.println("Before " + strInvString2 + " after inverting characters " + resStrInvString2);
+
+        String strInvString3 = "abcde";
+        String resStrInvString3 = Chapter7.Exercises.invertString(strInvString3);
+        System.out.println("Before " + strInvString3 + " after inverting characters " + resStrInvString3);
+
+        System.out.println();
+
+        System.out.println("il risultato di geometrica(5) è:" + Chapter7.Exercises.geometrica(5));
+
+        System.out.println();
+        
+        System.out.println("il risultato di geometrica(5) è:" + Chapter7.Exercises.armonica(3));
     }
     
 }

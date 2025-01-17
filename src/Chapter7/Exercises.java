@@ -144,7 +144,7 @@ public class Exercises {
         return compoundInterest(startingValue, months-1) * 1.005;
     }
 
-    // ex11 numberof distinct messages that can be sent in k milliseconds
+    // ex11 number of distinct messages that can be sent in k milliseconds
     public static int M(int k) {
         if(k == 0 || k == 1)
             return 0;
@@ -153,4 +153,70 @@ public class Exercises {
         // k > 3
         return M(k - 2) + M(k - 3);
     }
+
+    //ex12 number of vowels letters in a string
+    public static int nVowels(String input) {
+        if(input.length() == 0)
+            return 0;
+        if(input.length() == 1) {
+            if(checkVowel(input.charAt(0)))
+                return 1;
+            return 0;
+        }
+        return nVowels(Character.toString(input.charAt(0))) + nVowels(input.substring(1, input.length()));
+
+    }
+
+    public static boolean checkVowel(char character){
+        character = Character.toLowerCase(character);
+        if(character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u')
+            return true;
+        return false;
+    }
+
+    //ex13 return a string that is the input string without all the wovels letters
+    public static String remVowels(String input) {
+        if(input.length() == 0)
+            return "";
+        if(input.length() == 1) {
+            if(checkVowel(input.charAt(0)))
+                return "";
+            return input;
+        }
+        return remVowels(Character.toString(input.charAt(0))) + remVowels(input.substring(1, input.length()));
+    }
+
+    //ex14 return a string that is the input string with every character duplicated
+    public static String DuplicateCharacters(String input) {
+        if(input.length() == 0)
+            return "";
+        if(input.length() == 1) {
+            return Character.toString(input.charAt(0)) + input.charAt(0);
+        }
+        return DuplicateCharacters(Character.toString(input.charAt(0))) + DuplicateCharacters(input.substring(1, input.length()));
+    }
+
+    // 7.4.15 return a string that is the input string reversed
+    public static String invertString(String input) {
+        if(input.length() == 0)
+            return "";
+        if(input.length() == 1) {
+            return input;
+        }
+        return Character.toString(input.charAt(input.length() - 1)) + invertString(input.substring(1, input.length() - 1)) + Character.toString(input.charAt(0));
+    }
+
+    // 7.6.2
+    public static int geometrica(int n) {
+        if(n == 1)
+            return 1;
+        return n * geometrica(n - 1);
+    }
+
+    public static double armonica(int n) {
+        if(n == 1)
+            return 1;
+        return (1.0/n) * armonica(n - 1);
+    }
+
 }
